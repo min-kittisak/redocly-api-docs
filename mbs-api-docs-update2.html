@@ -11,7 +11,53 @@
       padding: 0;
       margin: 0;
     }
+    .nav-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 15px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .nav-sidebar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.2);
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+    }
+    .nav-sidebar a:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+    }
+    body {
+      padding-top: 50px;
+    }
+    @media (max-width: 768px) {
+      .nav-sidebar {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+      }
+      .nav-sidebar a {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+      }
+    }
   </style>
+  <div class="nav-sidebar">
+    <a href="index.html" style="margin-right: auto; font-weight: 700;">← Back to Portal</a>
+    <a href="lms-api-docs-update2.html">📚 LMS Service</a>
+    <a href="mbs-api-docs-update2.html">📹 MBS Service</a>
+    <a href="vbs-api-docs-update2.html">📺 VBS Service</a>
+  </div>
   <script src="https://cdn.redocly.com/redoc/v2.5.1/bundles/redoc.standalone.js"></script><style data-styled="true" data-styled-version="6.3.9">.hoYmkG{width:calc(100% - 40%);padding:0 40px;}/*!sc*/
 @media print,screen and (max-width: 75rem){.hoYmkG{width:100%;padding:40px 40px;}}/*!sc*/
 data-styled.g4[id="sc-hLseeT"]{content:"hoYmkG,"}/*!sc*/
